@@ -1,13 +1,15 @@
-//challenge link
+//challenge link:
 //https://www.hackerrank.com/challenges/most-commons/problem?isFullScreen=true
 
-//Solution
-// 1. Sort the string in alphabetical order
-// 2. split the string into strings of similar characters
-// use a regExp to group similar
-// 3. sort the string in descending order based on quantity
-// 4. Slice the first 3 strings.
-// 5. Iterate through the string to print the first char of str and its quantity
+/*
+Solution:
+Sort the string in alphabetical order
+split the string into strings of similar characters
+use a regExp to group similar
+sort the string in descending order based on quantity
+Slice the first 3 strings.
+Iterate through the string to print the first char of str and its quantity
+*/
 
 function companyLogo(str) {
   const sortedStr = str.split("").sort().join("");
@@ -20,3 +22,6 @@ function companyLogo(str) {
     console.log(`${element[0]} ${element.length}`);
   });
 }
+
+//example usage
+console.log(companyLogo("google"));
